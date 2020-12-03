@@ -1,12 +1,12 @@
-package SortObjects;
+package sortobjects;
 
-import MediaObjects.Book;
-import MediaObjects.Media;
-import MediaObjects.Movie;
+import mediaobjects.Book;
+import mediaobjects.Media;
+import mediaobjects.Movie;
 
 import java.util.Comparator;
 
-public class SortlByLenght implements Comparator {
+public class SortByRealeaseDate implements Comparator {
 
     @Override
     public int compare(Object o1, Object o2) {
@@ -19,17 +19,19 @@ public class SortlByLenght implements Comparator {
                 Book b1 = (Book) o1;
                 if (m2.getClass() == Book.class) {
                     Book b2 = (Book) o2;
-                    return b1.getPages().compareToIgnoreCase(b2.getPages());
+                    return b1.getPublicationDate().compareToIgnoreCase(b2.getPublicationDate());
                 } else if (m2.getClass() == Movie.class) {
-                    return 1;
+                    Movie mv2 = (Movie) o2;
+                    return b1.getPublicationDate().compareToIgnoreCase(mv2.getReleaseDate());
                 }
             } else if (m1.getClass() == Movie.class) {
                 Movie mv1 = (Movie) o1;
                 if (m2.getClass() == Book.class) {
-                    return -1;
+                    Book b2 = (Book) o2;
+                    return mv1.getReleaseDate().compareToIgnoreCase(b2.getPublicationDate());
                 } else if (m2.getClass() == Movie.class) {
                     Movie mv2 = (Movie) o2;
-                    return mv1.getRunningTime().compareToIgnoreCase(mv2.getRunningTime());
+                    return mv1.getReleaseDate().compareToIgnoreCase(mv2.getReleaseDate());
                 }
             }
         } else if (null == o1) {

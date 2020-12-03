@@ -1,8 +1,8 @@
-package SortObjects;
+package sortobjects;
 
-import MediaObjects.Book;
-import MediaObjects.Media;
-import MediaObjects.Movie;
+import mediaobjects.Book;
+import mediaobjects.Media;
+import mediaobjects.Movie;
 
 import java.util.Comparator;
 

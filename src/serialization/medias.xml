@@ -1,0 +1,44 @@
+<Biblioteka>
+  <Book>
+    <title>Unknown Kimi Raikkonen</title>
+    <genre>Biography</genre>
+    <author>Kari Hotakainen</author>
+    <publicationDate>2018</publicationDate>
+    <pages>336</pages>
+  </Book>
+  <Book>
+    <title>Green Mile</title>
+    <genre>Novel</genre>
+    <author>Stephen King</author>
+    <publicationDate>1996</publicationDate>
+    <pages>416</pages>
+  </Book>
+  <Book>
+    <title>Alchemist</title>
+    <genre>Novel</genre>
+    <author>Paulo Coelho</author>
+    <publicationDate>1988</publicationDate>
+    <pages>163</pages>
+  </Book>
+  <Movie>
+    <title>Star Wars: Return of the Jedi</title>
+    <genre>Science fiction</genre>
+    <director>Richard Marquand</director>
+    <releaseDate>1983</releaseDate>
+    <runningTime>132</runningTime>
+  </Movie>
+  <Movie>
+    <title>Green Book</title>
+    <genre>Biographical comedy-drama</genre>
+    <director>Peter Farrelly</director>
+    <releaseDate>2018</releaseDate>
+    <runningTime>130</runningTime>
+  </Movie>
+  <Movie>
+    <title>Hobbit: An Unexpected Journey</title>
+    <genre>Fantasy</genre>
+    <director>Peter Jackson</director>
+    <releaseDate>2012</releaseDate>
+    <runningTime>169</runningTime>
+  </Movie>
+</Biblioteka>

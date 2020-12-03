@@ -1,4 +1,4 @@
-package MediaObjects;
+package mediaobjects;
 
 public class Media {
 

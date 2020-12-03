@@ -1,4 +1,4 @@
-package MediaObjects;
+package mediaobjects;
 
 import java.util.Objects;
 
@@ -21,9 +21,6 @@ public class Book extends Media implements Comparable {
     public Book(Movie movie) {
         super.setTitle(movie.getTitle());
         super.setGenre(movie.getGenre());
-        this.author = movie.getDirector();
-        this.publicationDate = movie.getReleaseDate();
-        this.pages = movie.getRunningTime();
     }
 
     public String getAuthor() {
@@ -67,11 +64,6 @@ public class Book extends Media implements Comparable {
                 Objects.equals(getPages(), book.getPages()) &&
                 Objects.equals(super.getTitle(), book.getTitle()) &&
                 Objects.equals(super.getGenre(), book.getGenre());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getAuthor(), getPublicationDate(), getPages(), super.getTitle(), super.getGenre());
     }
 
     @Override
